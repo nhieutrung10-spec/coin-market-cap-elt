@@ -1,0 +1,18 @@
+# === Python rác ===
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# === dbt (Chỉ push file code cấu hình, KHÔNG push file sinh ra khi chạy) ===
+database/dbt_for_coin/target/
+database/dbt_for_coin/dbt_packages/
+database/dbt_for_coin/logs/
+
+# === Bảo mật & Cấu hình cá nhân ===
+.env
+*.env
+config/.user.yml
+
+# === Hệ điều hành ===
+.DS_Store
+Thumbs.db

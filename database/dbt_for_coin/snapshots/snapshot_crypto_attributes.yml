@@ -1,0 +1,10 @@
+snapshots:
+   - name: snapshot_crypto_attributes
+     relation: ref('dim_crypto') 
+     config:
+        schema: analytics
+        database: coin_analytics
+        unique_key: coin_id
+        strategy: check
+        check_cols: ['cmc_rank','tags']
+        dbt_valid_to_current: "to_date('9999-12-31','YYYY-MM-DD')"

@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: fact_coins     
+    columns:
+        - name: fact_id
+          data_tests:
+            - unique
+            - not_null

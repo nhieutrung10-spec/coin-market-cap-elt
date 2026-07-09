@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: staging
+    database: coin_analytics  
+    schema: staging         
+    description: "Nơi chứa các bảng dữ liệu thô (Raw Data) được nạp từ Python API"
+    
+    tables:
+      - name: raw_data
+        description: "Dữ liệu tài chính crypto thô từ CoinMarketCap API"
+        columns:
+          - name: coin_id
+            tests:
+              - not_null

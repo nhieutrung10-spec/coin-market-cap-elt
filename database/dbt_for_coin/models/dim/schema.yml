@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: dim_platforms     
+    columns:
+        - name: platform_id
+          data_tests:
+            - unique
+            - not_null
+  - name: dim_crypto
+    columns:
+        - name: coin_id
+          data_tests:
+            - unique  
+            - not_null
+    
+    
