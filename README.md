@@ -3,6 +3,7 @@
 Thư mục này chứa toàn bộ logic xử lý dữ liệu (ELT) cho dự án CoinMarketCap, bao gồm các script Python để thu thập dữ liệu (Extract/Load) và project dbt để biến đổi dữ liệu (Transform) trong Data Warehouse.
 
 ## 📁 Cấu trúc thư mục
+* `docker-compose.yaml`: File cấu hình kích hoạt cụm hạ tầng Airflow & Postgres.
 * `dag/`: Chứa file định nghĩa luồng Airflow DAG (`elt_coin.py`) để copy vào thư mục dags của Airflow.
 * `scripts/`: Chứa mã nguồn Python (`load_staging.py`) bóc tách dữ liệu từ API.
 * `database/dbt_for_coin/`: Toàn bộ source code của dbt (models, seeds, snapshots) dùng để transform dữ liệu.
